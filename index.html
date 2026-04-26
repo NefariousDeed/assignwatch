@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssignWatch — Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --orange: #e84d0e;
+      --navy:   #0d1f3c;
+      --light:  #f7f5f2;
+      --muted:  #6b7280;
+      --border: #e5e0d8;
+      --card:   #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Sora', sans-serif;
+      background: var(--light);
+      color: var(--navy);
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--navy);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-wrap {
+      width: 48px; height: 48px;
+      background: var(--orange);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 13px;
+      color: #94a3b8;
+      font-weight: 300;
+    }
+
+    /* ── Hero banner ── */
+    .hero {
+      background: linear-gradient(135deg, var(--orange) 0%, #c43a00 100%);
+      padding: 52px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: 20%;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+      font-weight: 300;
+      max-width: 520px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      font-size: 12px;
+      font-family: 'DM Mono', monospace;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Summary cards ── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 18px;
+      text-align: center;
+    }
+
+    .summary-card .icon { font-size: 28px; margin-bottom: 8px; }
+    .summary-card h3 { font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+    .summary-card p  { font-size: 12px; color: var(--muted); font-weight: 300; line-height: 1.5; }
+
+    /* ── Sections ── */
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-num {
+      width: 32px; height: 32px;
+      background: var(--orange);
+      color: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #374151;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .highlight-box {
+      background: #fff7f4;
+      border: 1px solid #ffd5c8;
+      border-left: 4px solid var(--orange);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: #7c2d12;
+      font-weight: 400;
+      margin: 14px 0;
+      line-height: 1.6;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 12px 0;
+    }
+
+    .check-list li {
+      font-size: 14px;
+      color: #374151;
+      font-weight: 300;
+      padding: 6px 0 6px 28px;
+      position: relative;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .check-list li:last-child { border: none; }
+
+    .check-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    .x-list li::before {
+      content: '✗';
+      color: #6b7280;
+    }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .contact-box h3 { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    .contact-box p  { font-size: 13px; color: #94a3b8; font-weight: 300; margin-bottom: 20px; }
+
+    .contact-btn {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 8px;
+      transition: opacity 0.15s;
+    }
+    .contact-btn:hover { opacity: 0.85; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 300;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .summary-grid { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 28px; }
+      header { padding: 20px; }
+      .section { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">📚</div>
+  <div>
+    <h1>AssignWatch</h1>
+    <p>Chrome Extension for Canvas LMS</p>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>Privacy Policy</h2>
+  <p>We built AssignWatch to help students stay on top of their deadlines — not to collect your data. Here's exactly what we do and don't do.</p>
+  <span class="updated">Last updated: April 2026</span>
+</div>
+
+<div class="container">
+
+  <!-- Summary Cards -->
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="icon">🔒</div>
+      <h3>Stays Local</h3>
+      <p>Your data never leaves your browser</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🚫</div>
+      <h3>Never Sold</h3>
+      <p>We don't sell or share your information</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">✅</div>
+      <h3>You're in Control</h3>
+      <p>Delete your data anytime from Settings</p>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>What Information We Collect</h2>
+    </div>
+    <p>AssignWatch collects only the minimum information required to function. Specifically:</p>
+    <ul class="check-list">
+      <li><strong>Canvas API Token</strong> — provided by you during setup, used solely to authenticate with your school's Canvas instance</li>
+      <li><strong>Canvas Domain</strong> — your school's Canvas URL (e.g. yourschool.instructure.com), used to direct API requests to the correct server</li>
+      <li><strong>Assignment Data</strong> — temporarily cached in your browser to reduce load times; refreshed every 30 minutes</li>
+    </ul>
+    <div class="highlight-box">
+      All of this data is stored exclusively in Chrome's local storage on your own device. It is never transmitted to any server owned or operated by AssignWatch.
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>What We Do NOT Collect</h2>
+    </div>
+    <ul class="check-list x-list">
+      <li>Your name, email address, or any personal identity information</li>
+      <li>Browsing history or activity outside of Canvas</li>
+      <li>Grades, course content, or submission data</li>
+      <li>Location data</li>
+      <li>Financial or payment information</li>
+      <li>Any analytics or usage statistics</li>
+    </ul>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>How We Use Your Information</h2>
+    </div>
+    <p>Your Canvas API token and domain are used for one purpose only: to make authenticated requests to your school's Canvas LMS so AssignWatch can display your assignment due dates.</p>
+    <p>Your data is never used for advertising, analytics, profiling, or any purpose beyond the core functionality of the extension.</p>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>Third-Party Services</h2>
+    </div>
+    <p>AssignWatch communicates directly with two services:</p>
+    <ul class="check-list">
+      <li><strong>Your school's Canvas LMS</strong> — to fetch your assignment data using the API token you provide</li>
+      <li><strong>Google Calendar</strong> — only when you click the "Add to Google Calendar" button, which opens a pre-filled Google Calendar URL in a new tab. No data is sent automatically.</li>
+    </ul>
+    <p>No data is shared with any other third party.</p>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>Permissions Explained</h2>
+    </div>
+    <ul class="check-list">
+      <li><strong>alarms</strong> — schedules a background refresh every 30 minutes to keep assignment data current</li>
+      <li><strong>notifications</strong> — sends a browser alert when an assignment is due within 24 hours</li>
+      <li><strong>storage</strong> — saves your Canvas token, domain, and cached assignments locally in your browser</li>
+      <li><strong>host_permissions (*.instructure.com)</strong> — allows the extension to make API calls to Canvas on your behalf</li>
+    </ul>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>Data Retention & Deletion</h2>
+    </div>
+    <p>Your data exists only in your browser's local storage. You can delete it at any time by:</p>
+    <ul class="check-list">
+      <li>Opening AssignWatch Settings and clearing your token and domain</li>
+      <li>Uninstalling the extension, which removes all stored data automatically</li>
+    </ul>
+    <p>AssignWatch has no servers or databases — there is no data retained on our end to delete.</p>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <p>If this privacy policy changes in a meaningful way, the "Last updated" date at the top of this page will reflect that. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <h3>Questions or Concerns?</h3>
+    <p>If you have any questions about this privacy policy or how AssignWatch handles your data, feel free to reach out.</p>
+    <a class="contact-btn" href="mailto:your@email.com">Contact Developer</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 AssignWatch by Sachin &nbsp;·&nbsp; Chrome Extension for Canvas LMS
+</footer>
+
+</body>
+</html>
